@@ -38,6 +38,16 @@ body {
   color: var(--front);
 }
 
+h1, p {
+  margin: 1em 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 900;
+  text-align: center;
+}
+
 #nav {
   display: flex;
     flex-wrap: wrap;
@@ -48,7 +58,7 @@ body {
 }
 
 #nav p {
-  /* margin: 0; */
+  margin: 0;
   font-weight: 700;
   text-align: center;
 }
@@ -73,4 +83,19 @@ body {
 #nav .selected {
   background-image: linear-gradient(transparent 55%, var(--active) 55%);
   font-weight: 700;
+}
+
+.about-photo {
+  display: block;
+  width: 50%;
+  max-width: 250px;
+  margin: 2em auto;
+  border-radius: 50%;
+}
+@media (min-width:  600px) {
+  .about-photo {
+    float: right;
+    margin: 2em;
+    shape-outside: circle(50%);
+  }
 }
