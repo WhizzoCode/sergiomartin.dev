@@ -85,6 +85,10 @@ h1 {
   font-weight: 700;
 }
 
+#main {
+  margin: 2em 0;
+}
+
 .about-photo {
   display: block;
   width: 50%;
