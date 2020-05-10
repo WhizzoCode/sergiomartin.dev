@@ -11,10 +11,17 @@
   <nav id="nav">
     <p><a href="/">Sergio Martín</a></p>
     <ul>
-      <li><a href="/articulos">Artículos</a></li>
-      <li><a href="/proyectos">Proyectos</a></li>
-      <li><a href="/sobre-mi">Sobre mí</a></li>
-      <li><a href="/contacto">Contacto</a></li>
+      {% for section in sections %}
+        {% for collectionPage in collections.all %}
+          {% if section == collectionPage.url %}
+          <li
+            {% if page.url ==  collectionPage.url %}
+              class="selected"
+            {% endif %}
+          ><a href="{{ section }}">{{ collectionPage.data.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
     </ul>
   </nav>
 
