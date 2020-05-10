@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Mi página web personal en www.sergiomartin.dev",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "repository": {
     "type": "git",
@@ -14,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/WhizzoCode/sergiomartin.dev/issues"
   },
-  "homepage": "https://www.sergiomartin.dev"
+  "homepage": "https://www.sergiomartin.dev",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.10.0"
+  }
 }
