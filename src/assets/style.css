@@ -135,7 +135,7 @@ body {
 
 #main .about-photo {
   display: block;
-  width: min(50%, 250px);
+  width: min(45%, 200px);
   margin: 2em auto;
   border-radius: 50%;
 }
