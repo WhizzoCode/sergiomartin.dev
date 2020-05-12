@@ -74,6 +74,27 @@ body {
   padding: 2rem 1rem;
 }
 
+@media (min-width:  600px) {
+  
+  html {
+    padding: 1rem;
+  }
+
+  #nav {
+    padding: 1rem 2rem 0;
+  }
+  
+  #main {
+    padding: 0 2rem;
+  }
+  
+  #footer {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+  }
+
+}
+
 /* ----[ MODULE ]------------------------------------------------------------ */
 
 #nav {
