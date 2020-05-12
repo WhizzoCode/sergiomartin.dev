@@ -39,12 +39,22 @@ h1, p {
   margin: 1rem 0;
 }
 
+pre {
+  margin: 2rem 0;
+}
+
 h1 {
   font-family: 'Rakkas', serif;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
   line-height: 1.1;
+}
+
+pre {
+  padding: 1rem;
+  background-color: var(--front);
+  color: hsl(90, 75%, 55%);
 }
 
 /* ----[ LAYOUT ]------------------------------------------------------------ */
