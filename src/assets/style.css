@@ -35,17 +35,16 @@ body {
   color: var(--front);
 }
 
+h1, p {
+  margin: 1rem 0;
+}
+
 h1 {
-  margin: 3rem 0;
   font-family: 'Rakkas', serif;
   font-size: 3rem;
   font-weight: 400;
   text-align: center;
   line-height: 1.1;
-}
-
-p {
-  margin: 1rem 0;
 }
 
 /* ----[ LAYOUT ]------------------------------------------------------------ */
@@ -155,6 +154,10 @@ body {
   margin: 0;
   font-size: 0.8rem;
   text-align: center;
+}
+
+#main header {
+  margin: 3rem 0;
 }
 
 #main .about-photo {
