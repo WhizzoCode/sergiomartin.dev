@@ -59,6 +59,7 @@ body {
   max-width: 900px;
   min-height: 100%;
   margin: auto;
+  box-shadow: 0.25rem 0.25rem 1rem var(--front);
 }
 
 #nav {
