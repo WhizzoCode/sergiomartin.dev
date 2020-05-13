@@ -2,3 +2,18 @@
 layout: layouts/base.njk
 title: Contacto
 ---
+<form class="contact-form" action="#">
+  <label for="name" class="label-name">
+    Nombre:
+    <input type="text" name="name" id="name">
+  </label>
+  <label for="email" class="label-email">
+    Correo electrónico:
+    <input type="email" name="email" id="email">
+  </label>
+  <label for="message" class="label-message">
+    Mensaje:
+    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+  </label>
+  <button type="submit">Enviar</button>
+</form>

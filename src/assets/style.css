@@ -55,6 +55,22 @@ pre {
   color: hsl(90, 75%, 55%);
 }
 
+input, textarea, button {
+  outline-color: var(--active);
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+button {
+  border: none;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  background-color: var(--active);
+  color: var(--front);
+  box-shadow: 0.5rem 0.5rem 0 var(--front);
+  font-weight: 700;
+}
+
 /* ----[ LAYOUT ]------------------------------------------------------------ */
 
 html {
@@ -180,6 +196,50 @@ body {
     margin: 2rem;
     shape-outside: circle(50%);
   }
+}
+
+#main .contact-form {
+  display: flex;
+    flex-direction: column;
+}
+
+#main .contact-form label{
+  margin-bottom: 1rem;
+}
+
+#main .contact-form input,
+#main .contact-form textarea {
+  margin-top: 0.2rem;
+  display: block;
+  width: 100%;
+}
+
+#main .contact-form button {
+  align-self: center;
+  margin: 1rem 0 2rem;
+}
+
+@media (min-width:  600px) {
+
+  #main .contact-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #main .contact-form .label-name,
+  #main .contact-form .label-email {
+    width: calc(50% - 0.5rem);
+  }
+
+  #main .contact-form .label-name {
+    margin-right: 1rem;
+  }
+
+  #main .contact-form .label-message {
+    width: 100%;
+  }
+
 }
 
 /* ----[ STATE ]------------------------------------------------------------- */
