@@ -35,15 +35,8 @@ body {
   color: var(--front);
 }
 
-h1, p {
-  margin: 1rem 0;
-}
-
-pre {
-  margin: 2rem 0;
-}
-
 h1 {
+  margin: 1rem 0;
   font-family: 'Rakkas', serif;
   font-size: 3rem;
   font-weight: 400;
@@ -51,7 +44,12 @@ h1 {
   line-height: 1.1;
 }
 
+p {
+  margin: 1rem 0;
+}
+
 pre {
+  margin: 2rem 0;
   padding: 1rem;
   background-color: var(--front);
   color: hsl(90, 75%, 55%);
