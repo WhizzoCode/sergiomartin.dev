@@ -50,14 +50,14 @@ p {
 
 pre {
   margin: 2rem 0;
-  padding: 1rem;
+  padding: 0.5rem;
   background-color: var(--front);
   color: hsl(90, 75%, 55%);
 }
 
 input, textarea, button {
   outline-color: var(--active);
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: 1rem;
 }
 
