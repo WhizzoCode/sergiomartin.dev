@@ -4,40 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
 </head>
 <body>
 
   <nav id="nav">
     <p><a href="/">Sergio Martín</a></p>
     <ul>
-      {% for section in sections %}
-        {% for collectionPage in collections.all %}
-          {% if section == collectionPage.url %}
-          <li
-            {% if page.url ==  collectionPage.url %}
-              class="selected"
-            {% endif %}
-          ><a href="{{ section }}">{{ collectionPage.data.title }}</a></li>
-          {% endif %}
-        {% endfor %}
-      {% endfor %}
+      <li><a href="/articles">Artículos</a></li>
+      <li><a href="/projects">Proyectos</a></li>
+      <li><a href="/about">Sobre mí</a></li>
+      <li><a href="/contact">Contacto</a></li>
     </ul>
   </nav>
 
-  <main id="main">
-    <header>
-      <h1>{{ title }}</h1>
-    </header>
+  <main>
     {{ content | safe }}
   </main>
 
-  <footer id="footer">
+  <footer>
     <ul>
-      <li><a href="#"><svg><use xlink:href="/assets/symbols.svg#github" /></svg></a></li>
-      <li><a href="#"><svg><use xlink:href="/assets/symbols.svg#twitter" /></svg></a></li>
-      <li><a href="#"><svg><use xlink:href="/assets/symbols.svg#linkedin" /></svg></a></li>
-      <li><a href="#"><svg><use xlink:href="/assets/symbols.svg#rss" /></svg></a></li>
+      <li><a href="https://github.com/WhizzoCode">GitHub</a></li>
+      <li><a href="https://twitter.com/WhizzoCode">Twitter</a></li>
+      <li><a href="https://www.linkedin.com/in/sergiomartin-dev/">LinkedIn</a></li>
+      <li><a href="#">RSS</a></li>
     </ul>
     <p>© Sergio Martín 2020</p>
   </footer>
