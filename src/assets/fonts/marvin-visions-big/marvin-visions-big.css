@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Marvin Visions Big';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("MarvinVisionsBig-Bold.woff2") format("woff2"),
+       url("MarvinVisionsBig-Bold.woff") format("woff"),
+       url("MarvinVisionsBig-Bold.eot") format("embedded-opentype");
+}
