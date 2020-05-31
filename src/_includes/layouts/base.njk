@@ -4,32 +4,60 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <link rel="stylesheet" href="/assets/style.css">
+  <link rel="stylesheet" href="/assets/styles/prism-tomorrow.css">
+  <link rel="stylesheet" href="/assets/styles/style.css">
+  <!-- <link rel="stylesheet" href="/assets/style-old-3.css"> -->
+  <!-- <style>
+    @import '/assets/fonts/marvin-visions-big/marvin-visions-big.css';
+
+    :root {
+      --color-1: hsl(48, 100%, 50%);
+      --color-2: hsl( 0,   0%, 12%);
+    }
+
+    h1, h2 {
+      font-family: 'Marvin Visions Big', sans-serif;
+    }
+
+    h2 {
+      display: inline-block;
+      padding: 0 0.25em;
+    }
+
+    #header, h2 {
+      background-color: var(--color-1);
+      color: var(--color-2);
+    }
+  </style> -->
 </head>
 <body>
 
-  <nav>
-    <p><a href="/">Sergio Martín</a></p>
-    <ul>
-      <li><a href="/articles">Artículos</a></li>
-      <li><a href="/projects">Proyectos</a></li>
-      <li><a href="/about">Sobre mí</a></li>
-      <li><a href="/contact">Contacto</a></li>
-    </ul>
+  <nav id="nav">
+    <div class="wrapper">
+      <p><a href="/">Sergio Martín</a></p>
+      <ul class="menu">
+        <li><a href="/articles">Artículos</a></li>
+        <li><a href="/projects">Proyectos</a></li>
+        <li><a href="/about">Sobre mí</a></li>
+        <li><a href="/contact">Contacto</a></li>
+      </ul>
+    </div>
   </nav>
 
   <main>
     {{ content | safe }}
   </main>
 
-  <footer>
-    <ul>
-      <li><a href="https://github.com/WhizzoCode">GitHub</a></li>
-      <li><a href="https://twitter.com/WhizzoCode">Twitter</a></li>
-      <li><a href="https://www.linkedin.com/in/sergiomartin-dev/">LinkedIn</a></li>
-      <li><a href="#">RSS</a></li>
-    </ul>
-    <p>© Sergio Martín 2020</p>
+  <footer id="footer">
+    <div class="wrapper">
+      <ul class="menu">
+        <li><a href="https://github.com/WhizzoCode">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/sergiomartin-dev/">LinkedIn</a></li>
+        <li><a href="https://twitter.com/WhizzoCode">Twitter</a></li>
+        <li><a href="#">RSS</a></li>
+      </ul>
+      <p>© Sergio Martín 2020</p>
+    </div>
   </footer>
 
 </body>
