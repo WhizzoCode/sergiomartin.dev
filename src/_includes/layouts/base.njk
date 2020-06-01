@@ -6,29 +6,6 @@
   <title>{{ title }}</title>
   <link rel="stylesheet" href="/assets/styles/prism-tomorrow.css">
   <link rel="stylesheet" href="/assets/styles/style.css">
-  <!-- <link rel="stylesheet" href="/assets/style-old-3.css"> -->
-  <!-- <style>
-    @import '/assets/fonts/marvin-visions-big/marvin-visions-big.css';
-
-    :root {
-      --color-1: hsl(48, 100%, 50%);
-      --color-2: hsl( 0,   0%, 12%);
-    }
-
-    h1, h2 {
-      font-family: 'Marvin Visions Big', sans-serif;
-    }
-
-    h2 {
-      display: inline-block;
-      padding: 0 0.25em;
-    }
-
-    #header, h2 {
-      background-color: var(--color-1);
-      color: var(--color-2);
-    }
-  </style> -->
 </head>
 <body>
 
@@ -44,7 +21,7 @@
     </div>
   </nav>
 
-  <main>
+  <main id="main">
     {{ content | safe }}
   </main>
 
