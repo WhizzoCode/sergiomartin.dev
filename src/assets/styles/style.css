@@ -109,12 +109,6 @@ ul ul {
   line-height: 1.5;
 }
 
-#header .intro {
-  font-size: 1.2rem;
-  font-style: italic;
-  line-height: 2;
-}
-
 /**** MODULE: #FOOTER *********************************************************/
 
 #footer {
@@ -144,6 +138,14 @@ ul ul {
 
 .menu > *:not(:last-child) {
   margin-right: 1rem;
+}
+
+/**** MODULE: .INTRO **********************************************************/
+
+.intro {
+  font-size: 1.2rem;
+  font-style: italic;
+  line-height: 2;
 }
 
 /**** MADULE: .AVATAR *********************************************************/
