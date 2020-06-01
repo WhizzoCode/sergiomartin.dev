@@ -138,6 +138,16 @@ ul ul {
   margin-right: 1rem;
 }
 
+/**** MODULE: .ARROW-LINK *****************************************************/
+
+.arrow-link {
+  font-weight: 700;
+}
+
+.arrow-link::after {
+  content: " ⟶";
+}
+
 /**** MODULE: .COLLECTION *****************************************************/
 
 .collection {
@@ -175,13 +185,15 @@ ul ul {
 }
 
 .block-card > p:first-child::after {
-  /* TODO: Quitar esto, cambiar estilo de los títulos */
+  /* TODO: Quitar esto, cambiar estilo de los títulos... */
   content: " ⟶";
+  /* TODO: ...hasta aquí */
 }
 
 .block-card:hover > p:first-child {
-  /* TODO: Quitar esto, cambiar estilo de los títulos */
+  /* TODO: Quitar esto, cambiar estilo de los títulos... */
   background-image: linear-gradient(var(--blue-4), var(--blue-4));
+  /* TODO: ...hasta aquí */
 }
 
 .block-card a:not(.block-link) {
