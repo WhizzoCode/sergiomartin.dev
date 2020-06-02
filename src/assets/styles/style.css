@@ -91,10 +91,12 @@ ul ul {
 #nav .wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 #nav p {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
   font-weight: 700;
 }
 
@@ -123,21 +125,19 @@ ul ul {
   margin-bottom: 0;
 }
 
-#footer .menu {
-  justify-content: center;
-}
-
 /**** MODULE: .MENU ***********************************************************/
 
 .menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   margin-left: 0;
   list-style: none;
 }
 
-.menu > *:not(:last-child) {
-  margin-right: 1rem;
+.menu > * {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
 }
 
 /**** MODULE: .INTRO **********************************************************/
