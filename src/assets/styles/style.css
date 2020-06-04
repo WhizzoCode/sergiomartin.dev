@@ -7,12 +7,19 @@
 :root {
   background-color: var(--background);
   color: var(--text);
-  font-family: Inter, sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
+
+:root,
+input,
+textarea{
+  font-family: Inter, sans-serif;
+}
 @supports (font-variation-settings: normal) {
-  :root {
+  :root,
+  input,
+  textarea{
     font-family: 'Inter var', sans-serif;
     font-feature-settings: 'calt' 1, 'case' 1, 'zero' 1;
   }
@@ -118,6 +125,68 @@ body {
   }
 }
 
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc(600px - 2rem);
+  margin: 2rem auto;
+}
+
+#contact-form > * {
+  margin: 0.5rem 0;
+}
+
+#contact-form label {
+  width: 100%;
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  #contact-form label:nth-child(1),
+  #contact-form label:nth-child(2) {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+#contact-form input:not([type="submit"]),
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 0.05rem solid var(--text);
+  padding: 0.5rem;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+#contact-form input[type="submit"] {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0.5em 2em;
+  background-color: var(--text);
+  color: var(--background);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: var(--action);
+  color: var(--background);
+  cursor: pointer;
+}
+
+#contact-form input:not([type="submit"]):focus,
+#contact-form textarea:focus {
+  outline: 0.2rem solid var(--action);
+}
+
+#contact-form input[type="submit"]:focus {
+  outline: none;
+}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
@@ -165,8 +234,9 @@ body {
 /**** THEME *******************************************************************/
 
 :root {
-  --background:  hsl(0, 0%, 20%);
-  --text-dark:   hsl(0, 0%, 65%);
-  --text:        hsl(0, 0%, 75%);
-  --text-bright: hsl(0, 0%, 90%);
+  --background:  hsl(  0,  0%, 20%);
+  --text-dark:   hsl(  0,  0%, 65%);
+  --text:        hsl(  0,  0%, 75%);
+  --text-bright: hsl(  0,  0%, 90%);
+  --action:      hsl(220, 50%, 67%);
 }
