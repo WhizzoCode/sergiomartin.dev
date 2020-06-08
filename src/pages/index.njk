@@ -17,10 +17,10 @@ permalink: "/"
   <h2>Artículos</h2>
   <ul class="collection">
     {% for article in collections.article | reverse %}
-    <li>
-      <p><strong><a href="{{ article.url }}">{{ article.data.title }}</a></strong></p>
-      <p class="meta">{{article.date | shortDate }} en {{ article.data.category }}</p>
-    </li>
+      <li>
+        <p><strong><a href="{{ article.url }}">{{ article.data.title }}</a></strong></p>
+        <p class="meta">{{article.date | shortDate }} en {{ article.data.category }}</p>
+      </li>
     {% endfor %}
   </ul>
 </section>
@@ -28,11 +28,11 @@ permalink: "/"
 <section>
   <h2>Proyectos</h2>
   <ul class="collection">
-    <li>
-      <img src="/assets/images/photoko.jpg" alt="Interfaz del editor de Photoko">
-      <p><strong><a href="#">Photoko</a></strong></p>
-      <p>Aplicación de procesado/revelado de fotografías digitales.</p>
-      <p><a href="#">GitHub</a></p>
-    </li>
+    {% for project in projects %}
+      <a href="{{ project.linkUrl }}"><img src="{{ project.imageUrl }}" alt="{{ project.imageAlt }}"></a>
+      <p><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
+      <p>{{ project.description }}</p>
+      <p><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
+    {% endfor %}
   </ul>
 </section>
