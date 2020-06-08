@@ -4,7 +4,7 @@ layout: "layouts/base.njk"
 
 <header id="header" class="article">
   <h1>{{ title }}</h1>
-  <p class="meta">{{ date | shortDate }} en {{ category }}</p>
+  <p class="meta">{{ page.date | shortDate }} en {{ category }}</p>
 </header>
 
 {{ content | safe }}
