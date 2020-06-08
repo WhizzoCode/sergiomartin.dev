@@ -1,7 +1,6 @@
 ---
-title: El modelo de color HSL
-date: 2020-05-20
-tags: ["programación gráfica"]
+title: Que hay de nuevo en EcmaScript 2020
+date: 2020-05-21
 ---
 
 Cuando contratamos un VPS (Servidor Privado Virtual) o un servidor dedicado, el primer paso que debemos dar antes de montar nuestro stack de desarrollo (LAMP, MEAN, o cualquier otro) es hacer una configuración básica y securización del sistema. Para este artículo vamos a centrarnos en la primera parte, la configuración inicial de un sistema CentOS 8.

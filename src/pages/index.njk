@@ -16,14 +16,12 @@ permalink: "/"
 <section>
   <h2>Artículos</h2>
   <ul class="collection">
+    {% for article in collections.article | reverse %}
     <li>
-      <p><strong><a href="/articles/el-modelo-de-color-hsl">El modelo de color HSL</a></strong></p>
-      <p class="meta">6 Mayo 2020 en Programación gráfica</p>
+      <p><strong><a href="{{ article.url }}">{{ article.data.title }}</a></strong></p>
+      <p class="meta">{{article.date | shortDate }} en {{ article.data.category }}</p>
     </li>
-    <li>
-      <p><strong><a href="/articles/el-modelo-de-color-hsl">Que hay de nuevo en EcmaScript 2020</a></strong></p>
-      <p class="meta">5 Mayo 2020 en JavaScript</p>
-    </li>
+    {% endfor %}
   </ul>
 </section>
 
