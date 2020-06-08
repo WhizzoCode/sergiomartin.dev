@@ -11,6 +11,9 @@ module.exports = function(config) {
   config.addFilter("shortDate", function(value) {
     return `${value.getDate()} ${month[value.getMonth()]} ${value.getFullYear()}`;
   });
+  config.addFilter("longDate", function(value) {
+    return `${value.getDate()} de ${month[value.getMonth()]} de ${value.getFullYear()}`;
+  });
   config.addPlugin(syntaxHighlight);
   return {
     dir: {
