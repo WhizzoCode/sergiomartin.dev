@@ -29,10 +29,12 @@ permalink: "/"
   <h2>Proyectos</h2>
   <ul class="collection">
     {% for project in projects %}
-      <a href="{{ project.linkUrl }}"><img src="{{ project.imageUrl }}" alt="{{ project.imageAlt }}"></a>
-      <p><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
-      <p>{{ project.description }}</p>
-      <p><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
+      <li>
+        <a href="{{ project.linkUrl }}"><img src="{{ project.imageUrl }}" alt="{{ project.imageAlt }}"></a>
+        <p><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
+        <p>{{ project.description }}</p>
+        <p><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
+      </li>
     {% endfor %}
   </ul>
 </section>
