@@ -35,13 +35,13 @@ h1, h2, p, img, ul {
 h1, h2 {
   margin-top: 3rem;
   color: var(--text-bright);
-  font-family: 'Rammetto One', sans-serif;
-  font-weight: 400;
+  font-family: 'Wremena', serif;
+  font-weight: 700;
   line-height: 1.2;
 }
 
-h1 {font-size: 2rem;}
-h2 {font-size: 1.5rem;}
+h1 {font-size: 3rem;}
+h2 {font-size: 2.5rem;}
 
 img {
   display: block;

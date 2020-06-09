@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Wremena';
+  font-style:  normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("/assets/fonts/wremena/Wremena-Light.woff") format("woff"),
+       url("/assets/fonts/wremena/Wremena-Light.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Wremena';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/wremena/Wremena-Regular.woff") format("woff"),
+       url("/assets/fonts/wremena/Wremena-Regular.otf") format("opentype");
+}
+
+@font-face {
+  font-family: 'Wremena';
+  font-style:  normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/assets/fonts/wremena/Wremena-Bold.woff") format("woff"),
+       url("/assets/fonts/wremena/Wremena-Bold.otf") format("opentype");
+}
