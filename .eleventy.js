@@ -7,7 +7,7 @@ const month = [
 ];
 
 module.exports = function(config) {
-  config.addPassthroughCopy("src/assets");
+  config.setTemplateFormats(["njk", "md"]);
   config.addFilter("shortDate", function(value) {
     return `${value.getDate()} ${month[value.getMonth()]} ${value.getFullYear()}`;
   });
@@ -15,6 +15,8 @@ module.exports = function(config) {
     return `${value.getDate()} de ${month[value.getMonth()]} de ${value.getFullYear()}`;
   });
   config.addPlugin(syntaxHighlight);
+  config.addPassthroughCopy("src/assets/fonts");
+  config.addPassthroughCopy("src/assets/images");
   return {
     dir: {
       input: "src",
