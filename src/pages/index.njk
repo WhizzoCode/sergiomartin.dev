@@ -4,7 +4,15 @@ permalink: "/"
 ---
 
 <header id="header" class="index">
-  <img class="avatar" src="/assets/images/avatar.jpg" alt="Mi foto">
+  <img class="avatar"
+       srcset="
+         /assets/images/avatar-4x.jpg 4x,
+         /assets/images/avatar-3x.jpg 3x,
+         /assets/images/avatar-2x.jpg 2x,
+         /assets/images/avatar-1x.jpg 1x
+       "
+       src="/assets/images/avatar-1x.jpg"
+       alt="Mi foto">
   <div class="text">
     <h1>Sergio Martín</h1>
     <p><strong>Desarrollador de Aplicaciones Web.</strong></p>
