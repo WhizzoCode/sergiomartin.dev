@@ -1,5 +1,8 @@
 {
   "title": "Sergio Martín",
   "subtitle": "Desarrollador de Aplicaciones Web",
-  "url": "https://www.sergiomartin.dev"
+  "url": "https://www.sergiomartin.dev",
+  "author": {
+    "name": "Sergio Martín"
+  }
 }
