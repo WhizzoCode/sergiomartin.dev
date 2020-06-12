@@ -17,8 +17,7 @@ module.exports = function(config) {
   });
   config.addPlugin(syntaxHighlight);
   config.addPlugin(pluginRss);
-  config.addPassthroughCopy("src/assets/fonts");
-  config.addPassthroughCopy("src/assets/images");
+  config.addPassthroughCopy("src/assets");
   return {
     dir: {
       input: "src",
