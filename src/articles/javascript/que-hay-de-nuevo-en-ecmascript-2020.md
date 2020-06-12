@@ -1,5 +1,6 @@
 ---
 title: Que hay de nuevo en EcmaScript 2020
+description: Descripción de mi artículo
 date: 2020-05-21
 ---
 

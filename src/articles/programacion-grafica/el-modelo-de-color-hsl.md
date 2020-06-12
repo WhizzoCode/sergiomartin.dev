@@ -1,5 +1,6 @@
 ---
 title: El modelo de color HSL
+description: Descripción de mi artículo
 date: 2020-05-20
 ---
 
