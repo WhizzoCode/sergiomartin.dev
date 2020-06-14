@@ -28,7 +28,7 @@ textarea{
   box-sizing: border-box;
 }
 
-h1, h2, p, img, ul {
+h1, h2, p, img, ul, ol {
   margin: 1rem 0;
 }
 
@@ -64,20 +64,26 @@ strong {
   font-weight: 700;
 }
 
-ul {
+ul, ol {
   margin-left: 1rem;
   list-style: none;
 }
 
-ul ul {
+ul ul,
+ol ol {
   margin-top: 0;
   margin-bottom: 0;
   margin-left: 2rem;
 }
 
+li {
+  position: relative;
+}
+
 li::before {
   content: "•";
-  margin-right: 0.5em;
+  position: absolute;
+  left: -1rem;
 }
 
 /**** LAYOUT ******************************************************************/

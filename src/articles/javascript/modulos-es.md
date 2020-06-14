@@ -4,6 +4,8 @@ description: Descripción de mi artículo
 date: 2020-05-19
 ---
 
+## Introducción
+
 Cuando contratamos un VPS (Servidor Privado Virtual) o un servidor dedicado, el primer paso que debemos dar antes de montar nuestro stack de desarrollo (LAMP, MEAN, o cualquier otro) es hacer una configuración básica y securización del sistema. Para este artículo vamos a centrarnos en la primera parte, la configuración inicial de un sistema CentOS 8.
 
 ## Acceder al sistema
