@@ -1,5 +1,8 @@
 const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const pluginToc = require("eleventy-plugin-nesting-toc");
+const markdownIt = require("markdown-it");
+const markdownItAnchor = require("markdown-it-anchor");
 
 const month = [
   "Enero",      "Febrero",    "Marzo",      "Abril",
@@ -17,6 +20,14 @@ module.exports = function(config) {
   });
   config.addPlugin(syntaxHighlight);
   config.addPlugin(pluginRss);
+  config.addPlugin(pluginToc);
+  config.setLibrary("md",
+    markdownIt({
+      html: true,
+      linkify: true,
+      typographer: true
+    }).use(markdownItAnchor, {})
+  );
   config.addPassthroughCopy("src/assets");
   return {
     dir: {
