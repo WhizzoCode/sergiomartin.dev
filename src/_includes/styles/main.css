@@ -69,7 +69,7 @@ strong {
 }
 
 ul, ol {
-  margin-left: 1rem;
+  margin-left: 2rem;
   list-style: none;
 }
 
@@ -77,7 +77,6 @@ ul ul,
 ol ol {
   margin-top: 0;
   margin-bottom: 0;
-  margin-left: 2rem;
 }
 
 li {
