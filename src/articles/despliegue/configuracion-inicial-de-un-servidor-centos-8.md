@@ -1,7 +1,7 @@
 ---
-title: Módulos ES
-description: Descripción de mi artículo
-date: 2020-05-19
+title: Configuración inicial de un servidor CentOS 8
+description:
+date: 2020-06-16
 ---
 
 ## Introducción
