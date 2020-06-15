@@ -20,7 +20,7 @@ module.exports = function(config) {
   });
   config.addPlugin(syntaxHighlight);
   config.addPlugin(pluginRss);
-  config.addPlugin(pluginToc);
+  config.addPlugin(pluginToc, {headingText: "Tabla de contenidos", headingTag: "h2"});
   config.setLibrary("md",
     markdownIt({
       html: true,
