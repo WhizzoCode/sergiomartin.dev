@@ -1,0 +1,286 @@
+
+/**** BASE ********************************************************************/
+
+:root {
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+:root,
+input,
+textarea{
+  font-family: Inter, sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  :root,
+  input,
+  textarea{
+    font-family: 'Inter var', sans-serif;
+    font-feature-settings: 'calt' 1, 'case' 1, 'zero' 1;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, p, img, ul, ol {
+  margin: 1rem 0;
+}
+
+h1, h2 {
+  margin-top: 3rem;
+  color: var(--text-bright);
+  font-family: 'Wremena', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h1 {font-size: 2.5rem;}
+h2 {font-size: 1.5rem;}
+@media (min-width: 600px) {
+  h1 {font-size: 4rem;}
+  h2 {font-size: 2rem;}
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: var(--text-bright);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+ul, ol {
+  margin-left: 2rem;
+  list-style: none;
+}
+
+ul ul,
+ol ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+li {
+  position: relative;
+}
+
+li::before {
+  content: "•";
+  position: absolute;
+  left: -1rem;
+}
+
+/**** LAYOUT ******************************************************************/
+
+body {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1rem;
+}
+
+#nav {
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+}
+
+#header {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+#footer {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+/**** MODULE ******************************************************************/
+
+#footer {
+  text-align: center;
+}
+
+#footer p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#header.index .avatar {
+  width: 200px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  border: 10px solid var(--text);
+  border-radius: 50%;
+}
+
+@media (min-width: 600px) {
+  #header.index {
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+  }
+
+  #header.index .avatar {
+    margin: 0 2rem 0 0;
+  }
+
+  #header.index .text :first-child {
+    margin-top: 0;
+  }
+  
+  #header.index .text :last-child {
+    margin-bottom: 0;
+  }
+}
+
+#header.article h1 {
+  margin-bottom: 0;
+}
+
+#header.article p {
+  margin-top: 0;
+}
+
+.meta {
+  color: var(--text-dark);
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.menu li {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.menu li::before {
+  content: none;
+}
+
+.collection {
+  margin-left: 0;
+}
+
+.collection li {
+  margin: 2rem 1rem;
+}
+
+.collection li::before {
+  content: none;
+}
+
+.collection p {
+  margin: 0;
+}
+
+.collection img {
+  border: 10px solid var(--text);
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 600px) {
+  .collection img {
+    margin-left: 0;
+    margin-right: 0;
+    width: 50%;
+  }
+}
+
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: calc(600px - 2rem);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#contact-form > * {
+  margin: 0.5rem 0;
+}
+
+#contact-form label {
+  width: 100%;
+  font-weight: 700;
+}
+
+@media (min-width: 600px) {
+  #contact-form label:nth-child(1),
+  #contact-form label:nth-child(2) {
+    width: calc(50% - 0.5rem);
+  }
+}
+
+#contact-form input:not([type="submit"]),
+#contact-form textarea {
+  display: block;
+  width: 100%;
+  border: 0.05rem solid var(--text);
+  padding: 0.5rem;
+  background-color: var(--background);
+  color: var(--text);
+  font-size: 1rem;
+}
+
+#contact-form input[type="submit"] {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 0.5em 2em;
+  background-color: var(--text);
+  color: var(--background);
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+#contact-form input[type="submit"]:hover {
+  background-color: var(--action);
+  color: var(--background);
+  cursor: pointer;
+}
+
+#contact-form input:not([type="submit"]):focus,
+#contact-form textarea:focus {
+  outline: 0.2rem solid var(--action);
+}
+
+#contact-form input[type="submit"]:focus {
+  outline: none;
+}
+
+/**** STATE *******************************************************************/
+
+/**** THEME *******************************************************************/
+
+:root {
+  --background:  hsl(  0,  0%, 20%);
+  --text-dark:   hsl(  0,  0%, 65%);
+  --text:        hsl(  0,  0%, 75%);
+  --text-bright: hsl(  0,  0%, 90%);
+  --action:      hsl(220, 50%, 67%);
+}

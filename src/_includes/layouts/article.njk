@@ -2,11 +2,12 @@
 layout: "layouts/base.njk"
 ---
 
-<header id="header" class="article">
+<header>
   <h1>{{ title }}</h1>
   <p class="meta">{{ page.date | shortDate }} en {{ category }}</p>
 </header>
 
-{{ content | toc | safe }}
-
-{{ content | safe }}
+<div class="wrapper">
+  {{ content | toc | safe }}
+  {{ content | safe }}
+</div>
