@@ -52,10 +52,12 @@ h2::before {
 img {
   display: block;
   max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul, ol {
-  margin-left: 2rem;
+  margin-left: 2em;
   list-style: none;
 }
 
@@ -71,7 +73,7 @@ li {
 li::before {
   content: "•";
   position: absolute;
-  left: -1rem;
+  left: -1em;
 }
 
 blockquote {
