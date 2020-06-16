@@ -14,27 +14,27 @@
 </head>
 <body>
 
-  <!-- <nav id="nav">
+  <nav>
     <ul class="menu">
       <li><strong><a href="/">{{ site.title }}</a></strong></li>
       {% for link in topMenu %}
         <li><a href="{{ link.url }}">{{ link.name }}</a></li>
       {% endfor %}
     </ul>
-  </nav> -->
+  </nav>
 
   <main>
     {{ content | safe }}
   </main>
 
-  <!-- <footer id="footer">
+  <footer>
     <ul class="menu">
       {% for link in bottomMenu %}
         <li><a href="{{ link.url }}">{{ link.name }}</a></li>
       {% endfor %}
     </ul>
     <p>© Sergio Martín 2020</p>
-  </footer> -->
+  </footer>
 
 </body>
 </html>

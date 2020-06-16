@@ -1,112 +1,112 @@
 
 /**** BASE ********************************************************************/
 
-:root {
-  background-color: var(--background);
-  color: var(--text);
-  font-size: 18px;
-  line-height: 1.5;
-}
+/* :root { */
+  /* background-color: var(--background); */
+  /* color: var(--text); */
+  /* font-size: 18px; */
+  /* line-height: 1.5; */
+/* } */
 
-:root,
-input,
-textarea{
-  font-family: Inter, sans-serif;
-}
-@supports (font-variation-settings: normal) {
-  :root,
-  input,
-  textarea{
-    font-family: 'Inter var', sans-serif;
-    font-feature-settings: 'calt' 1, 'case' 1, 'zero' 1;
-  }
-}
+/* :root, */
+/* input, */
+/* textarea{ */
+  /* font-family: Inter, sans-serif; */
+/* } */
+/* @supports (font-variation-settings: normal) { */
+  /* :root, */
+  /* input, */
+  /* textarea{ */
+    /* font-family: 'Inter var', sans-serif; */
+    /* font-feature-settings: 'calt' 1, 'case' 1, 'zero' 1; */
+  /* } */
+/* } */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* * { */
+  /* margin: 0; */
+  /* padding: 0; */
+  /* box-sizing: border-box; */
+/* } */
 
-h1, h2, p, img, ul, ol {
-  margin: 1rem 0;
-}
+/* h1, h2, p, img, ul, ol { */
+  /* margin: 1rem 0; */
+/* } */
 
-h1, h2 {
-  margin-top: 3rem;
-  color: var(--text-bright);
-  font-family: 'Wremena', serif;
-  font-weight: 700;
-  line-height: 1.2;
-}
+/* h1, h2 { */
+  /* margin-top: 3rem; */
+  /* color: var(--text-bright); */
+  /* font-family: 'Wremena', serif; */
+  /* font-weight: 700; */
+  /* line-height: 1.2; */
+/* } */
 
-h1 {font-size: 2.5rem;}
-h2 {font-size: 1.5rem;}
-@media (min-width: 600px) {
-  h1 {font-size: 4rem;}
-  h2 {font-size: 2rem;}
-}
+/* h1 {font-size: 2.5rem;} */
+/* h2 {font-size: 1.5rem;} */
+/* @media (min-width: 600px) { */
+  /* h1 {font-size: 4rem;} */
+  /* h2 {font-size: 2rem;} */
+/* } */
 
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
+/* img { */
+  /* display: block; */
+  /* max-width: 100%; */
+  /* height: auto; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+/* } */
 
-a {
-  color: inherit;
-}
+/* a { */
+  /* color: inherit; */
+/* } */
 
-a:hover {
-  color: var(--text-bright);
-  text-decoration: none;
-}
+/* a:hover { */
+  /* color: var(--text-bright); */
+  /* text-decoration: none; */
+/* } */
 
-strong {
-  font-weight: 700;
-}
+/* strong { */
+  /* font-weight: 700; */
+/* } */
 
-ul, ol {
-  margin-left: 2rem;
-  list-style: none;
-}
+/* ul, ol { */
+  /* margin-left: 2rem; */
+  /* list-style: none; */
+/* } */
 
-ul ul,
-ol ol {
-  margin-top: 0;
-  margin-bottom: 0;
-}
+/* ul ul, */
+/* ol ol { */
+  /* margin-top: 0; */
+  /* margin-bottom: 0; */
+/* } */
 
-li {
-  position: relative;
-}
+/* li { */
+  /* position: relative; */
+/* } */
 
-li::before {
-  content: "•";
-  position: absolute;
-  left: -1rem;
-}
+/* li::before { */
+  /* content: "•"; */
+  /* position: absolute; */
+  /* left: -1rem; */
+/* } */
 
 /**** LAYOUT ******************************************************************/
 
-body {
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0 1rem;
-}
+/* body { */
+  /* max-width: 900px; */
+  /* margin-left: auto; */
+  /* margin-right: auto; */
+  /* padding: 0 1rem; */
+/* } */
 
 #nav {
   margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
-#header {
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-}
+/* #header { */
+  /* margin-top: 3rem; */
+  /* margin-bottom: 2rem; */
+/* } */
 
 #footer {
   margin-top: 3rem;
@@ -152,33 +152,33 @@ body {
   }
 }
 
-#header.article h1 {
-  margin-bottom: 0;
-}
+/* #header.article h1 { */
+  /* margin-bottom: 0; */
+/* } */
 
-#header.article p {
-  margin-top: 0;
-}
+/* #header.article p { */
+  /* margin-top: 0; */
+/* } */
 
-.meta {
-  color: var(--text-dark);
-}
+/* .meta { */
+  /* color: var(--text-dark); */
+/* } */
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 0;
-}
+/* .menu { */
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* margin-left: 0; */
+/* } */
 
-.menu li {
-  margin-left: 0.5em;
-  margin-right: 0.5em;
-}
+/* .menu li { */
+  /* margin-left: 0.5em; */
+  /* margin-right: 0.5em; */
+/* } */
 
-.menu li::before {
-  content: none;
-}
+/* .menu li::before { */
+  /* content: none; */
+/* } */
 
 .collection {
   margin-left: 0;

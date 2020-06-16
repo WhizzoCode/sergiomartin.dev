@@ -128,19 +128,55 @@ body {
   margin-right: auto;
 }
 
-/**** MODULE ******************************************************************/
+body > nav *,
+body > footer *,
+body > main > header * {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-.meta {color: var(--text-dark);}
+body > nav,
+body > footer {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body > main {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
 
 body > main > header {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+/**** MODULE ******************************************************************/
+
+.meta {color: var(--text-dark);}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-left: 0;
+}
+
+.menu li {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.menu li::before {
+  content: none;
+}
+
+body > footer {
   text-align: center;
 }
 
-body > main > header > * {
-  margin-top: 0;
-  margin-bottom: 0;
+body > main > header {
+  text-align: center;
 }
 
 /**** STATE *******************************************************************/
