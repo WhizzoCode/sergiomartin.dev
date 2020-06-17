@@ -4,7 +4,7 @@
 :root {
   background-color: var(--background);
   color: var(--text);
-  font-size: var(--font-size);
+  font-size: 18px;
   line-height: 1.65;
 }
 
@@ -28,9 +28,15 @@ textarea {
   padding: 0;
 }
 
-h1, h2, p, img, ul, ol, blockquote, pre[class*="language-"] {
+h1, h2, p, img, ul, ol, blockquote, form, pre[class*="language-"] {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
+}
+
+label,
+input[type=submit] {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 h1, h2 {
@@ -41,7 +47,7 @@ h1, h2 {
   line-height: 1.2;
 }
 
-h1 {font-size: var(--font-size-h1);}
+h1 {font-size: 2.5rem;}
 h2 {font-size: 2rem;}
 
 h2::before {
@@ -92,12 +98,41 @@ blockquote > :last-child {
 
 img,
 pre[class*="language-"],
+input,
+textarea,
 :not(pre) > code[class*="language-"] {
   border: 1px solid var(--border);
 }
 
 pre[class*="language-"] {
   font-size: 0.8rem;
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5em;
+  background-color: transparent;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+input[type=submit] {
+  width: inherit;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: var(--text);
+  color: var(--background);
+  font-size: 1rem;
+  font-weight: 700;
 }
 
 a {
@@ -175,10 +210,41 @@ body > main > header {
   text-align: center;
 }
 
+#contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#contact-form label {
+  width: 100%;
+}
+
+#contact-form label {
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+#contact-form input[type=submit] {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /**** STATE *******************************************************************/
 
 a:hover {
+  color: var(--highlighted);
   text-decoration: none;
+}
+
+input[type=submit]:hover {
+  background-color: var(--highlighted);
+  cursor: pointer;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid var(--highlighted);
 }
 
 /**** THEME *******************************************************************/
@@ -190,13 +256,20 @@ a:hover {
   --text:         hsl(  0,  0%, 75%);
   --text-light:   hsl(  0,  0%, 85%);
   --highlighted:  hsl(220, 50%, 67%);
-  --font-size:    18px;
-  --font-size-h1: 2.5rem;
 }
 
-@media (min-width: 600px) {
+/* @media (min-width: calc(600px + 2rem)) { */
+@media (min-width: 640px) {
+
   :root {
-    --font-size:    20px;
-    --font-size-h1: 3rem;
+    font-size: 20px;
   }
+  
+  h1 {font-size: 3rem;}
+
+  #contact-form label:nth-child(1),
+  #contact-form label:nth-child(2) {
+    width: calc(50% - 0.5em);
+  }
+
 }

@@ -3,24 +3,29 @@ title: Contacto
 description: Formulario de contacto
 ---
 
-<header id="header">
+<header>
   <h1>{{ title }}</h1>
-  <p>¿En qué puedo ayudarte?</p>
-  <p>Si quieres que trabajemos juntos en algun proyecto, o tienes alguna pregunta sobre lo que hago, no dudes en escribirme.</p>
 </header>
 
-<form id="contact-form" action="https://www.elformo.com/forms/b90dba4f-fcb7-48f5-bad4-4d56a2cdd49d" method="post" accept-charset="UTF-8">
-  <label for="name">
-    Nombre:
-    <input id="name" name="name" type="text" required>
-  </label>
-  <label for="email">
-    Correo electrónico:
-    <input id="email" name="email" type="email" required>
-  </label>
-  <label for="message">
-    Mensaje:
-    <textarea id="message" name="message" cols="30" rows="5" required></textarea>
-  </label>
-  <input type="submit" value="Enviar →">
-</form>
+<div class="wrapper">
+
+  <p>¿En qué puedo ayudarte?</p>
+  <p>Si quieres que trabajemos juntos en algun proyecto, o tienes alguna pregunta sobre lo que hago, no dudes en escribirme.</p>
+
+  <form id="contact-form" action="https://www.elformo.com/forms/b90dba4f-fcb7-48f5-bad4-4d56a2cdd49d" method="post" accept-charset="UTF-8">
+    <label for="name">
+      Nombre:
+      <input id="name" name="name" type="text" required>
+    </label>
+    <label for="email">
+      Correo electrónico:
+      <input id="email" name="email" type="email" required>
+    </label>
+    <label for="message">
+      Mensaje:
+      <textarea id="message" name="message" cols="30" rows="5" required></textarea>
+    </label>
+    <input type="submit" value="Enviar →">
+  </form>
+
+</div>

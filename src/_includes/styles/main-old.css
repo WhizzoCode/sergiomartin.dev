@@ -115,14 +115,14 @@
 
 /**** MODULE ******************************************************************/
 
-#footer {
+/* #footer {
   text-align: center;
-}
+} */
 
-#footer p {
+/* #footer p {
   margin-top: 0;
   margin-bottom: 0;
-}
+} */
 
 #header.index .avatar {
   width: 200px;
