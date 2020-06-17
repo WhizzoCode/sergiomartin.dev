@@ -141,11 +141,7 @@ body > footer {
   margin-bottom: 1rem;
 }
 
-body > main {
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-}
-
+body > main,
 body > main > header {
   margin-top: 4rem;
   margin-bottom: 4rem;
