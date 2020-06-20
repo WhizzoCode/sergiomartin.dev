@@ -249,6 +249,13 @@ body > footer {
   margin-bottom: 0;
 }
 
+.avatar {
+  margin-bottom: 3rem;
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0.2rem 0.2rem 0.4rem var(--avatar-shadow);
+}
+
 /**** STATE *******************************************************************/
 
 a:hover {
@@ -269,12 +276,13 @@ textarea:focus {
 /**** THEME *******************************************************************/
 
 :root {
-  --background:   hsl(  0,  0%, 15%);
-  --border:       hsl(  0,  0%, 25%);
-  --text-dark:    hsl(  0,  0%, 60%);
-  --text:         hsl(  0,  0%, 75%);
-  --text-light:   hsl(  0,  0%, 85%);
-  --highlighted:  hsl(220, 50%, 67%);
+  --avatar-shadow: hsl(  0,  0%,  0%);
+  --background:    hsl(  0,  0%, 15%);
+  --border:        hsl(  0,  0%, 25%);
+  --text-dark:     hsl(  0,  0%, 60%);
+  --text:          hsl(  0,  0%, 75%);
+  --text-light:    hsl(  0,  0%, 85%);
+  --highlighted:   hsl(220, 50%, 67%);
 }
 
 @media (min-width: 600px) {
