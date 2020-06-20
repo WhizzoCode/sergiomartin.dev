@@ -4,60 +4,51 @@ description: Página personal de Sergio Martín, desarrollador de Aplicaciones W
 permalink: /
 ---
 
-<header id="header" class="index">
-  <img class="avatar"
-       srcset="
-         /assets/images/avatar-720w.jpg 4x,
-         /assets/images/avatar-540w.jpg 3x,
-         /assets/images/avatar-360w.jpg 2x,
-         /assets/images/avatar-180w.jpg 1x
-       "
-       src="/assets/images/avatar-180w.jpg"
-       alt="Sergio Martín">
-  <div class="text">
-    <h1>{{ site.title }}</h1>
-    <p><strong>{{ site.subtitle }}</strong></p>
-    <p>Disfruto creando y aprendiendo para la web. Soy un entusiasta de los estándares y de la vainilla.</p>
-    <p><strong><a href="/about/">Leer más sobre mí ⟶</a></strong></p>
-  </div>
+<header>
+  <h1>{{ site.title }}</h1>
+  <p><strong>{{ site.subtitle }}</strong></p>
 </header>
 
-<section>
-  <h2>Artículos</h2>
-  <ul class="collection">
-    {% for article in collections.article | reverse %}
-      <li>
-        <p><strong><a href="{{ article.url }}">{{ article.data.title }}</a></strong></p>
-        <p class="meta">{{article.date | shortDate }} en {{ article.data.category }}</p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+<div class="wrapper">
 
-<section>
-  <h2>Proyectos</h2>
-  <ul class="collection">
-    {% for project in projects %}
-      <li>
-        <a href="{{ project.linkUrl }}">
-          <img srcset="
-                 /assets/images/{{ project.id }}-1280w.jpg 1280w,
-                 /assets/images/{{ project.id }}-960w.jpg 960w,
-                 /assets/images/{{ project.id }}-640w.jpg 640w,
-                 /assets/images/{{ project.id }}-320w.jpg 320w
-               "
-               sizes="
-                 (min-width: 900px) calc(((900px - 72px) / 2) - 20px),
-                 (min-width: 600px) calc(((100vw - 72px) / 2) - 20px),
-                 calc(100vw - 72px - 20px)
-               "
-               src="/assets/images/{{ project.id }}-320w.jpg"
-               alt="{{ project.imageAlt }}">
-        </a>
-        <p><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
-        <p>{{ project.description }}</p>
-        <p><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
-      </li>
-    {% endfor %}
-  </ul>
-</section>
+  <p>Disfruto creando y aprendiendo para la web. Soy un entusiasta de los estándares y de la vainilla.</p>
+  <p><strong><a href="/about/">Leer más sobre mí ⟶</a></strong></p>
+
+  <section>
+    <h2>Artículos</h2>
+    <ul class="collection">
+      {% for article in collections.article | reverse %}
+        <li>
+          <p><strong><a href="{{ article.url }}">{{ article.data.title }}</a></strong></p>
+          <p class="meta">{{article.date | shortDate }} en {{ article.data.category }}</p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+  <section>
+    <h2>Proyectos</h2>
+    <ul class="collection">
+      {% for project in projects %}
+        <li class="project">
+          <p class="title"><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
+          <p>{{ project.description }}</p>
+          <p class="links"><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
+          <p>
+            <a href="{{ project.linkUrl }}">
+              <img srcset="
+                    /assets/images/{{ project.id }}-1280w.jpg 1280w,
+                    /assets/images/{{ project.id }}-960w.jpg 960w,
+                    /assets/images/{{ project.id }}-640w.jpg 640w,
+                    /assets/images/{{ project.id }}-320w.jpg 320w
+                  "
+                  src="/assets/images/{{ project.id }}-320w.jpg"
+                  alt="{{ project.imageAlt }}">
+            </a>
+          </p>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+
+</div>

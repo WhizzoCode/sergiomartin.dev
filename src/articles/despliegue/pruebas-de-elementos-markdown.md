@@ -59,6 +59,8 @@ Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum consectetur, te
 
 ![Interfaz de Photoko](/assets/images/photoko-1280w.jpg)
 
+![Interfaz de Photoko](/assets/images/photoko-320w.jpg)
+
 ## Código
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, optio qui aliquid labore, veniam dicta odio vel facilis modi perspiciatis earum. Minus rem suscipit quam quidem et voluptates hic. Ea.
