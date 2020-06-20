@@ -244,8 +244,7 @@ body > footer {
   content: none;
 }
 
-.collection p,
-.collection img {
+.collection p {
   margin-top: 0;
   margin-bottom: 0;
 }

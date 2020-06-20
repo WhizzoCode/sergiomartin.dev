@@ -4,7 +4,6 @@
     "name": "Photoko",
     "description": "Aplicación de procesado/revelado de fotografías digitales.",
     "imageAlt": "Interfaz del editor de Photoko",
-    "linkLabel": "GitHub",
     "linkUrl": "https://github.com/WhizzoCode/photoko"
   }
 ]

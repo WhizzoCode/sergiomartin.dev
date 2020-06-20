@@ -30,10 +30,9 @@ permalink: /
     <h2>Proyectos</h2>
     <ul class="collection">
       {% for project in projects %}
-        <li class="project">
-          <p class="title"><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
+        <li>
+          <p><strong><a href="{{ project.linkUrl }}">{{ project.name }}</a></strong></p>
           <p>{{ project.description }}</p>
-          <p class="links"><a href="{{ project.linkUrl }}">{{ project.linkLabel }}</a></p>
           <p>
             <a href="{{ project.linkUrl }}">
               <img srcset="
