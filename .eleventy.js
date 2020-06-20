@@ -24,7 +24,7 @@ module.exports = function(config) {
   config.setLibrary("md",
     markdownIt({
       html: true,
-      linkify: true,
+      linkify: false,
       typographer: true
     }).use(markdownItAnchor, {})
   );
