@@ -252,6 +252,7 @@ body > footer {
 }
 
 .avatar {
+  width: 180px;
   margin-bottom: 3rem;
   border: none;
   border-radius: 50%;
