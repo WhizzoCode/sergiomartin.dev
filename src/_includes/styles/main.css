@@ -213,6 +213,8 @@ body > footer {
 
 .meta {color: var(--text-dark);}
 
+.biggest {font-size: 4rem;}
+
 .menu {
   display: flex;
   flex-wrap: wrap;
