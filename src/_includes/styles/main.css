@@ -35,7 +35,7 @@ h1, h2 {
   margin-bottom: 1.5rem;
 }
 
-p, img, ul, ol, blockquote, pre, form,
+p, img, ul, ol, blockquote, form, pre,
 pre[class*="language-"] {
   margin-top: 1.5rem;
   margin-bottom: 1.5rem;
@@ -161,8 +161,18 @@ strong {
   font-weight: 700;
 }
 
+code {
+  background: #2d2d2d;
+  color: #ccc;
+  border-radius: 0.3em;
+  padding: 0.1em;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
 img,
+pre,
 pre[class*="language-"],
+:not(pre) > code,
 :not(pre) > code[class*="language-"],
 input,
 textarea {
